@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="4.0" package="com.mido.photoremove" android:installLocation="auto" android:versionCode="4">
+	<uses-sdk android:minSdkVersion="18" android:targetSdkVersion="30" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<application android:label="photoremove.Android">
+		<provider android:name="android.support.v4.content.FileProvider" android:authorities="com.companyname.photorename.fileprovider" android:exported="false" android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
+		</provider>
+		<!-- Set set this to YOUR APP ID-->
+		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-2572035864509774~6896778706" />
+	</application>
+</manifest>
